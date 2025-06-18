@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 style="text-align: center;">Resume Builder Form</h2>
+  
+  <form action="#" method="post" enctype="multipart/form-data">
+    
+    <label for="fieldName">Field Name</label>
+    <input type="text" id="fieldName" name="fieldName" required>
+
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number">
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+      <option value="">--Select--</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label for="maritalStatus">Marital Status</label>
+    <select id="maritalStatus" name="maritalStatus">
+      <option value="">--Select--</option>
+      <option>Single</option>
+      <option>Married</option>
+      <option>Divorced</option>
+      <option>Widowed</option>
+    </select>
+
+    <label for="nationality">Nationality</label>
+    <input type="text" id="nationality" name="nationality">
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="3"></textarea>
+
+    <label for="linkedin">LinkedIn Profile URL</label>
+    <input type="url" id="linkedin" name="linkedin">
+
+    <label for="github">GitHub Profile URL</label>
+    <input type="url" id="github" name="github">
+
+    <label for="profilePhoto">Upload Profile Photo</label>
+    <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*">
+
+    <label for="resume">Upload Resume (PDF only)</label>
+    <input type="file" id="resume" name="resume" accept="application/pdf" required>
+
+    <label for="careerObjective">Career Objective</label>
+    <textarea id="careerObjective" name="careerObjective" rows="3"></textarea>
+
+    <label for="qualification">Highest Qualification</label>
+    <input type="text" id="qualification" name="qualification">
+
+    <label for="college">Name of College / University</label>
+    <input type="text" id="college" name="college">
+
+    <label for="graduationYear">Year of Graduation</label>
+    <input type="number" id="graduationYear" name="graduationYear" min="1900" max="2099" step="1">
+
+    <label for="technicalSkills">Technical Skills (HTML, CSS, JS, etc.)</label>
+    <textarea id="technicalSkills" name="technicalSkills" rows="3"></textarea>
+
+    <label for="programmingLanguages">Programming Languages Known</label>
+    <textarea id="programmingLanguages" name="programmingLanguages" rows="3"></textarea>
+
+    <label for="certifications">Certifications (if any)</label>
+    <textarea id="certifications" name="certifications" rows="3"></textarea>
+
+    <label for="workExperience">Work Experience (Years)</label>
+    <input type="number" id="workExperience" name="workExperience" min="0" max="50">
+
+    <label for="lastCompany">Last Company Worked At</label>
+    <input type="text" id="lastCompany" name="lastCompany">
+
+    <label for="jobRole">Your Job Role / Designation</label>
+    <input type="text" id="jobRole" name="jobRole">
+
+    <label for="languagesKnown">Languages Known</label>
+    <textarea id="languagesKnown" name="languagesKnown" rows="2"></textarea>
+
+    <label for="hobbies">Hobbies</label>
+    <textarea id="hobbies" name="hobbies" rows="2"></textarea>
+
+    <label>
+      <input type="checkbox" name="declaration" required>
+      I hereby declare that all the information provided is true and correct to the best of my knowledge.
+    </label>
+
+    <button type="submit">Submit Resume</button>
+  </form>
+
+</body>
+</html>
